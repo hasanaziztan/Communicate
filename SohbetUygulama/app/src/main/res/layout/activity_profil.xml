@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profil_arka_plan"
+    tools:context=".ProfilActivity">
+
+    <TextView
+        android:id="@+id/profil_resmi_ziyaret"
+        android:src="@drawable/ic_person_gri"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="210dp"
+        android:layout_height="210dp"/>
+
+    <TextView
+        android:id="@+id/kullanici_adi_ziyaret"
+        android:textAlignment="center"
+        android:layout_below="@+id/profil_resmi_ziyaret"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:text="Kullanıcı Adı"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/profil_durumu_ziyaret"
+        android:textAlignment="center"
+        android:layout_below="@+id/kullanici_adi_ziyaret"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:text="Profil Durumu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/mesaj_gonderme_talebi_butonu"
+        android:layout_below="@id/profil_durumu_ziyaret"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Talebi Gönder"
+        android:background="@drawable/butonlar"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/mesaj_degerlendirme_talebi_butonu"
+        android:layout_below="@id/mesaj_gonderme_talebi_butonu"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mesaj Talebi İptal"
+        android:background="@drawable/butonlar"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelefonlaOturumActivity"
+    android:background="@drawable/uygulama_bg">
+
+    <LinearLayout
+        android:id="@+id/linelay3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/telefon_numarasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Telefon Numarası"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <EditText
+                android:drawableStart="@drawable/phone"
+                android:inputType="phone"
+                android:id="@+id/telefon_numarasi_girdi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/girdiler"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:maxLines="1"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/dogrulama_kodu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Doğrulama kodu"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"
+                />
+
+            <EditText
+                android:drawableStart="@drawable/verification"
+                android:inputType="textPassword"
+                android:id="@+id/dogrulama_kodu_girisi"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/girdiler"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:maxLines="1"
+                android:visibility="invisible"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/yobe"
+        android:layout_below="@id/linelay3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/dogrulama_butonu_gonder_butonu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/butonlar"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:text="Kodu gönder"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_below="@id/dogrulama_butonu_gonder_butonu"
+            android:id="@+id/dogrulama_butonu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Doğrula"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-medium"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/butonlar"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:visibility="invisible"
+            />
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

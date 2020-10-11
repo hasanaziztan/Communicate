@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ana_arkadas_bulma_secenegi"
+        android:title="Arkadaş Bul"
+        app:showAsAction="never"> </item>
+    <item
+        android:id="@+id/ana_grup_olustur_secenegi"
+        android:title="Grup Oluştur"
+        app:showAsAction="never"> </item>
+    <item
+        android:id="@+id/ana_ayarlar_secenegi"
+        android:title="Ayarlar"
+        app:showAsAction="never"> </item>
+    <item
+        android:id="@+id/ana_cikis_secenegi"
+        android:title="Çıkış Yap"
+        app:showAsAction="never"> </item>
+</menu>

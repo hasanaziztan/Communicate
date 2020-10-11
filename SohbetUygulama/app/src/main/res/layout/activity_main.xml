@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent">
+
+
+    //Toolbar eklenen yer geçiş yerleri Fragment
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        //AppBar
+        <include
+            android:id="@+id/ana_sayfa_toolbar"
+            layout="@layout/app_bar_layout">
+
+        </include>
+        
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/ana_sekmeler"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </com.google.android.material.tabs.TabLayout>
+        
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ana_sekmeler_pager"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>

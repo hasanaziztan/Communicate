@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KayitActivity"
+    android:background="@drawable/uygulama_bg">
+
+    <ImageView
+        android:id="@+id/kayit_resmi"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/kayit_photo" />
+
+    <EditText
+        android:id="@+id/kayit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayit_resmi"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/girdiler"
+        android:drawableStart="@drawable/epostaicon"
+        android:hint="Email adresinizi giriniz"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/kayit_sifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayit_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/girdiler"
+        android:drawableStart="@drawable/pw"
+        android:hint="Şifrenizi giriniz"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/kayit_butonu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayit_sifre"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/butonlar"
+        android:padding="8dp"
+        android:text="Giris"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/zaten_hesap_var"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kayit_butonu"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="15dp"
+        android:padding="8dp"
+        android:text="Zaten hesabım var"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

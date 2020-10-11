@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/profil_resim"
+        android:layout_marginTop="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/alici_mesaj_metni"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:padding="8dp"
+        android:text="Alici mesajlari burada"
+        android:background="@drawable/alici_mesajlari_layout"
+        android:layout_toEndOf="@id/profil_resim"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/gonderen_mesaj_metni"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:padding="8dp"
+        android:text="gönderen mesajlari burada"
+        android:background="@drawable/gonderen_mesajlari_layout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="@+id/alici_mesaj_metni"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
